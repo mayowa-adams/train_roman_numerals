@@ -14,13 +14,14 @@ class RomanNumerals {
   static I = 1;
 
   static toRoman(num) {
-    return this.num;
+    return this[num];
   }
 
   static fromRoman(str) {
-    return RomanNumerals.str;
+    return this[str];
   }
 }
 
-// console.log(RomanNumerals.toRoman(1000));
+console.log(RomanNumerals.toRoman(1000));
 console.log(RomanNumerals.fromRoman("CD"));
+
